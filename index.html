@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/swiper.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <article class="header__heading container">
+        <div class="row">
+            <div class="col-lg-2 logo-block">
+                <a href="./index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+                <div class="spacer"></div>
+                <button class="button burger" id="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+                        <g>
+	                        <g >
+		                        <path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03    c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
+                                <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03    S379.58,180.455,372.939,180.455z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-7">
+                <nav class="menu">
+                    <ul>
+                        <li class="d-flex d-lg-none">
+                            <a href="./index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+                            <div class="spacer"></div>
+                            <svg class="menu-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 492 492"
+                                 style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872    c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872    c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052    L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116    c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952    c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116    c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="d-block d-lg-none">
+                            <a href="#" class="button">Войти</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Блоггерам</a>
+                        </li>
+                        <li>
+                            <a href="./advertiser.html">Рекламодателям</a>
+                        </li>
+                        <li>
+                            <a href="#">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="d-flex d-lg-none menu__langs">
+                            <a class="active" href="#">RU</a>
+                            <a href="#">UZ</a>
+                            <a href="#">EN</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 d-none d-lg-flex buttons">
+                <div class="spacer"></div>
+                <button id="sign" class="button button--full-height">Войти</button>
+                <div class="lang-block button button--full-height">
+                    <button id="lang-button" class="button button--full-height">RU</button>
+                    <ul id="lang-menu" class="lang-menu">
+                        <li><a href="#">RU</a></li>
+                        <li><a href="#">UZ</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+</header>
+<section class="home-screen">
+    <div class="container">
+        <div class="home__main row no-gutters">
+            <div class="col-lg-12">
+                <h1>
+                    Мы объединяем
+                    рекламодателей и блогеров
+                    <br><br>
+                    Удобно, легально, легко.
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider-screen container">
+    <h3 class="ml-lg-5 d-none d-md-block">Тебя ждёт:</h3>
+    <section class="swiper-container loading">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./assets/img/slider-item_1.png)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E" class="entity-img" />
+                <div class="content">
+                    <img class="dialog" src="./assets/img/dialog.png">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Регистрируйся и получи доступ к эксклюзивным предложениям от рекламодателей абсолютно БЕСПЛАТНО
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./assets/img/slider-item_2.png)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLWTdaX3J5b1VueDg" class="entity-img" />
+                <div class="content">
+                    <img class="dialog" src="./assets/img/dialog.png">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Канал постоянного и легального заработка
+                        Без посредников и комиссий.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./assets/img/slider-item_3.png)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRml1b3B6eXVqQ2s" class="entity-img" />
+                <div class="content">
+                    <img class="dialog" src="./assets/img/dialog.png">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Гарантия оплаты и защиты ваших интересов </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </section>
+
+</section>
+<section class="iphone-screen">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-12">
+                <img src="./assets/img/iphone.png" alt="iphone">
+            </div>
+            <div class="text-block col-lg-12">
+                <ul>
+                    <li>
+                        <h4>
+                            Удобно
+                        </h4>
+                        <p>
+                            На платформе TheBlogger рекламодатели могут разместить рекламу своих сервисов, услуг и товаров в Instagram, Facebook или telegram аккаунтах.
+                            <br><br>
+                            Добавьте ваш канал или страницу на платформу TheBlogger и зарабатывайте, занимаясь своим любимым делом. Выбирайте и размещайте ту рекламу, которая подходит именно вашей аудитории.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Легально
+                        </h4>
+                        <p>
+                            Платформа The Blogger работает только в рамках законодательства РУз и предоставляем возможность заключать сделки юридическим лицам и физическим лицам только со официальным статусом «самозанятый» – скрин приложения SOLIQ
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Легко
+                        </h4>
+                        <p>
+                            Для регистрации на платформе  TheBlogger достаточно:
+                            Заниматься любимым делом
+                            Иметь аккаунт с более чем 1000 подписчиками
+                            Создавать уникальный контент
+                            Любить свою аудиторию</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-to-this-work container">
+    <div class="row">
+        <div class="text-block col-lg-12 col-md-12 col-12">
+            <h6>Как это работает:</h6>
+            <ul class="steps">
+                <li>
+                    <p class="steps__heading">1</p>
+                    <p class="steps__content">
+                        Зарегистрируйся
+                        на платформе TheBlogger.uz
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140.329" height="67.972" viewBox="0 0 140.329 67.972">
+                        <g transform="translate(0 0)">
+                            <path id="Контур_33" d="M138.721,30.106l0-.005L110.074,1.6a5.482,5.482,0,0,0-7.734,7.771L121.57,28.5H5.482a5.482,5.482,0,0,0,0,10.963H121.57L102.34,58.6a5.482,5.482,0,0,0,7.734,7.771l28.642-28.5,0-.005A5.486,5.486,0,0,0,138.721,30.106Z" fill="#9a9a9a"/>
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <p class="steps__heading">2</p>
+                    <p class="steps__content">
+                        Создайте свое техническое задание
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140.329" height="67.972" viewBox="0 0 140.329 67.972">
+                        <g transform="translate(0 0)">
+                            <path id="Контур_33" d="M138.721,30.106l0-.005L110.074,1.6a5.482,5.482,0,0,0-7.734,7.771L121.57,28.5H5.482a5.482,5.482,0,0,0,0,10.963H121.57L102.34,58.6a5.482,5.482,0,0,0,7.734,7.771l28.642-28.5,0-.005A5.486,5.486,0,0,0,138.721,30.106Z" fill="#9a9a9a"/>
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <p class="steps__heading">3</p>
+                    <p class="steps__content">
+                        Отправляйте предложения о сотрудничестве напрямую блогерам или
+                        создайте открытое задание и получай заявки
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140.329" height="67.972" viewBox="0 0 140.329 67.972">
+                        <g transform="translate(0 0)">
+                            <path id="Контур_33" d="M138.721,30.106l0-.005L110.074,1.6a5.482,5.482,0,0,0-7.734,7.771L121.57,28.5H5.482a5.482,5.482,0,0,0,0,10.963H121.57L102.34,58.6a5.482,5.482,0,0,0,7.734,7.771l28.642-28.5,0-.005A5.486,5.486,0,0,0,138.721,30.106Z" fill="#9a9a9a"/>
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <p class="steps__heading">4</p>
+                    <p class="steps__content">
+                        Согласовывайте детали и условия сотрудничества
+
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140.329" height="67.972" viewBox="0 0 140.329 67.972">
+                        <g transform="translate(0 0)">
+                            <path id="Контур_33" d="M138.721,30.106l0-.005L110.074,1.6a5.482,5.482,0,0,0-7.734,7.771L121.57,28.5H5.482a5.482,5.482,0,0,0,0,10.963H121.57L102.34,58.6a5.482,5.482,0,0,0,7.734,7.771l28.642-28.5,0-.005A5.486,5.486,0,0,0,138.721,30.106Z" fill="#9a9a9a"/>
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <p class="steps__heading">5</p>
+                    <p class="steps__content">
+                        Оплачивайте услуги
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140.329" height="67.972" viewBox="0 0 140.329 67.972">
+                        <g transform="translate(0 0)">
+                            <path id="Контур_33" d="M138.721,30.106l0-.005L110.074,1.6a5.482,5.482,0,0,0-7.734,7.771L121.57,28.5H5.482a5.482,5.482,0,0,0,0,10.963H121.57L102.34,58.6a5.482,5.482,0,0,0,7.734,7.771l28.642-28.5,0-.005A5.486,5.486,0,0,0,138.721,30.106Z" fill="#9a9a9a"/>
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <p class="steps__heading">6</p>
+                    <p class="steps__content">
+                        Получайте детализированный подробный отчет и закрывающие документы
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140.329" height="67.972" viewBox="0 0 140.329 67.972">
+                        <g transform="translate(0 0)">
+                            <path id="Контур_33" d="M138.721,30.106l0-.005L110.074,1.6a5.482,5.482,0,0,0-7.734,7.771L121.57,28.5H5.482a5.482,5.482,0,0,0,0,10.963H121.57L102.34,58.6a5.482,5.482,0,0,0,7.734,7.771l28.642-28.5,0-.005A5.486,5.486,0,0,0,138.721,30.106Z" fill="#9a9a9a"/>
+                        </g>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="work-with">
+    <div class="container">
+        <div class="row">
+            <div class="text-block col-lg-12 col-md-12 col-12">
+                <h6>С нами работают:</h6>
+                <ul class="partners-list">
+                    <li>
+                        <img src="./assets/img/work-with-1.png">
+                        <p class="text-content">
+                            Раушан <br> Максумова
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-2.png">
+                        <p class="text-content">
+                            Go Uz
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-3.png">
+                        <p class="text-content">
+                            Шохрулло <br>
+                            Абдуллаев
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-4.png">
+                        <p class="text-content">
+                            Алина <br>
+                            золотая
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-5.png">
+                        <p class="text-content">
+                            Лайло <br>
+                            Махмудова
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-6.png">
+                        <p class="text-content">
+                            Шеф <br>
+                            Бургер
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-7.png">
+                        <p class="text-content">
+                            BBQ <br>
+                            burger
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-8.png">
+                        <p class="text-content">
+                            Les <br>
+                            Ailes
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-9.png">
+                        <p class="text-content">
+                            Chopar
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-10.png">
+                        <p class="text-content">
+                            Look
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-11.png">
+                        <p class="text-content">
+                            Promeat
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-12.png">
+                        <p class="text-content">
+                            Go Uz
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-13.png">
+                        <p class="text-content">
+                            Yokohama
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-14.png">
+                        <p class="text-content">
+                            Chevrolet
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/work-with-15.png">
+                        <p class="text-content">
+                            MacCoffee
+                            <span class="color"></span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer container">
+    <div class="row">
+        <div class="col-12 col-sm-3">
+            <img src="./assets/img/logo.png" alt="logo">
+        </div>
+        <div class="col-12 col-sm-9 d-flex">
+            <div class="spacer"></div>
+            <ul>
+                <li>
+                    <a href="#">Блогерам</a>
+                </li>
+                <li>
+                    <a href="#">Рекламодателям</a>
+                </li>
+                <li>
+                    <a href="#">Блог</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/swiper.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
