@@ -519,6 +519,7 @@ body {
     display: flex;
     flex-flow: column;
     padding-left: 20px;
+    flex-basis: calc(100% / 3);
     border-right: 2px solid #dddddd;
 }
 .iphone-screen .text-block ul li:last-child {
@@ -769,7 +770,7 @@ body {
     box-shadow: 6px 6px 20px #cbcbcb;
 }
 .work-with .partners-list > * img {
-    height: 270px;
+    height: 250px;
     width: 100%;
 }
 .work-with .partners-list .text-content {
@@ -889,6 +890,6 @@ body {
 
 .advertisers-home-screen {
     min-height: 100vh;
-    background: no-repeat url(../assets/img/advertisers-bg.png);
+    background: no-repeat url(../assets/img/advertisers-bg.jpg);
     background-size: cover;
 }
